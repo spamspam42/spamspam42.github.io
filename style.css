@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+  /*Primary*/
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /*Gradients*/
+  --pale-bue-color: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-grey-blue: hsl(224, 30%, 27%);
+
+  /*Gradiens*/
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+}
+
+.content {
+  /* border: 3px red solid; */
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.flexbox {
+  border-radius: 30px;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 10px 10px 30px var(--pale-bue-color);
+}
+
+.box-left,
+.box-right {
+  color: var(--pale-bue-color);
+  width: 50%;
+  height: auto;
+  /* border: 3px green solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 40px;
+}
+
+
+/*Right BOX*/
+.box-right {
+  height: 100%;
+  padding: 40px 40px;
+  border-radius: 0 30px 30px 0;
+  background: white;
+  color: var(--dark-grey-blue);
+}
+
+/*Flexbox Data*/
+.box-right .data {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+}
+
+/*Summary-Header*/
+.box-right h3 {
+  margin-bottom: 26px;
+  font-weight: 800;
+}
+
+/*Datasheet Background */
+.box-right .reaction {
+  background: rgba(255, 87, 87, 0.1);
+}
+
+.box-right .memory {
+  background: rgba(255, 176, 31, 0.1);
+}
+
+.box-right .verbal {
+  background: rgba(0, 189, 145, 0.1);
+}
+
+.box-right .visual {
+  background: rgba(17, 37, 212, 0.1);
+}
+
+/*Datasheet Color*/
+.box-right .memory img,
+.box-right .memory p:nth-child(2) {
+  color: var(--orangey-yellow);
+  font-weight: bold;
+}
+
+.box-right .verbal img,
+.box-right .verbal p:nth-child(2) {
+  color: var(--green-teal);
+  font-weight: bold;
+}
+
+.box-right .reaction img,
+.box-right .reaction p:nth-child(2) {
+  color: var(--light-red);
+  font-weight: bold;
+}
+
+.box-right .visual img,
+.box-right .visual p:nth-child(2) {
+  color: var(--cobalt-blue);
+  font-weight: bold;
+}
+
+
+/*Image-Icon*/
+.box-right .data img {
+  margin-right: 10px;
+}
+
+
+/*100-Score to the right*/
+.box-right .data p:last-of-type {
+  margin-left: auto;
+}
+
+/*Continue Link/Button*/
+.box-right a {
+  background: var(--dark-grey-blue);
+  width: 100%;
+  border-radius: 90px;
+  display: inline-block;
+  align-self: center;
+  text-align: center;
+  padding: 16px;
+  margin-top: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/*Left BOX*/
+span {
+  font-weight: 800;
+}
+
+.box-left {
+  height: 490px;
+  padding: 40px 50px;
+  background: linear-gradient(var(--light-slate-blue), var(--cobalt-blue));
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/*Circle Procent*/
+.box-left .procent {
+  width: 50%;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*How can i adjust this better without pixels?*/
+  width: 180px;
+  height: 180px;
+  padding: auto 0;
+  border-radius: 50%;
+  background: linear-gradient(var(--violet-blue), var(--persian-blue));
+}
+
+/*Opacity Paragraph*/
+.box-left .procent p:nth-child(2),
+.box-left p {
+  color: var(--light-lavender);
+  opacity: 0.8;
+}
+
+/*76 Styling*/
+.box-left .procent p:nth-child(1) {
+  font-size: 70px;
+  font-weight: 700;
+  color: #fff;
+  opacity: 1;
+}
+
+/*Great Styling*/
+.box-left .big {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 1;
+}
